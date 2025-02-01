@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Instruments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nos instruments</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="membres.html">Les Membres</a></li>
+                <li><a href="musique.html">Nos Musiques</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Nos Instruments</h2>
+        <div class="instruments-grid">
+            <div class="instrument">
+                <img src="images/guitare.jpg" alt="Image de la guitare" class="instrument-image">
+                <h3>Guitare</h3>
+                <p>La Harley Benton ST-20MN LH CA: Une guitare très cheap, mais qui fait un taff dingue. Le rapport qualité/prix est juste fabuleux. Plus d'excuses: lancez vous dans la musique.</p>
+            </div>
+            <div class="instrument">
+                <img src="images/basse.jpg" alt="Image de la basse" class="instrument-image">
+                <h3>Basse</h3>
+                <p>La Yamaha TRBX304: la basse de Stefan, qui est vraiment incroyable. Le son est juste parfait avec beaucoup de réglages.</p>
+            </div>
+            <div class="instrument">
+                <img src="images/batterie.jpg" alt="Image de la batterie" class="instrument-image">
+                <h3>Batterie</h3>
+                <p>Les batteries des salles de répétitions </p>
+            </div>
+        </div>
+    </section>
+	
+	      	   <section align="center" class="support-section">
+        <h2>Nous Soutenir</h2>
+        <p>Suivez-nous sur nos réseaux sociaux :</p>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+			<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+.fa-spotify {
+  background: #35f752
+;
+  color: white;
+}
+</style>
+</head>
+<body>
+<!-- Add font awesome icons -->
+<a href="https://www.youtube.com/@AfterLifeMusicBand" target="_blank" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/afterlife_music_official/" target="_blank" class="fa fa-instagram"></a>
+<a href="https://open.spotify.com/artist/votre_id_spotify" target="_blank" class="fa fa-spotify"></a>
+
+    </section>
+
+<!-- Menu Nous Contacter -->
+<div class="contact-menu" onclick="openContactPopup()">
+    <a href="#">Nous Contacter</a>
+</div>
+
+<!-- Pop-up Contact -->
+<div id="contact-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeContactPopup()">&times;</span>
+        <h2>Contactez-nous</h2>
+        <p>Email : <a href="mailto:contact@theafterlife.com">noahmusic0505@gmail.com</a></p>
+    </div>
+</div>
+
+<style>
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    padding: 20px;
+}
+.gallery-item {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.contact-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.contact-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-menu:hover {
+    background: #444;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.popup-content {
+    text-align: center;
+}
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+</style>
+
+<script>
+function openContactPopup() {
+    document.getElementById('contact-popup').style.display = 'block';
+}
+function closeContactPopup() {
+    document.getElementById('contact-popup').style.display = 'none';
+}
+</script>
+
+<script>
+function openContactPopup() {
+    document.getElementById('contact-popup').style.display = 'block';
+}
+function closeContactPopup() {
+    document.getElementById('contact-popup').style.display = 'none';
+}
+</script>
+
+    <footer>
+        <p>&copy; 2024 Afterlife</p>
+    </footer>
+</body>
+</html>
